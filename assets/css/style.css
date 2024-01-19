@@ -74,18 +74,66 @@
 
 
 :root{
-    
+    --bool-heade-bg-color: #3161e0;
+    --bool-link-color: white;
 }
+
+/* #region global */
 
 body{
 margin: 0;
 }
 
+a{
+    text-decoration: none;
+    color: var(--bool-link-color);
+}
+
+/* #endregion */
+
+/* #region utility */
+
+.container{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 7200px;
+    max-width: 60%;
+}
+
+.df{
+    display: flex;
+}
+
+
+/* #endregion */
+
+/* #region header */
 header{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--bool-heade-bg-color);
 }
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.header-links{
+    justify-content: space-between;
+    width: 600px;
+    max-width: 80%;
+    text-decoration: none;
+}
+
+.login-button{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+/* #endregion */
 
 footer{
     display: flex;
