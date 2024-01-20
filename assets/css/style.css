@@ -1,97 +1,8 @@
-.debug header {
-    background-color: rgb(0, 217, 255);
-    height: 50px;
-}
-
-.debug header div {
-    background-color: bisque;
-    height: 30px;
-    border-style: dashed;
-}
-
-.debug main {
-    background-color: rgba(137, 43, 226, 0.233);
-    height: 500px;
-}
-
-.debug .m1 {
-    height: 100px;
-    background-color: rgba(0, 255, 64, 0.226);
-}
-
-.debug .m1-1 {
-    height: 50px;
-    background-color: rgba(137, 43, 226, 0.329);
-}
-
-.debug .m2 {
-    height: 100px;
-    background-color: rgba(165, 42, 42, 0.404);
-}
-
-.debug .m2-1 {
-    height: 50px;
-    background-color: rgba(95, 158, 160, 0.541);
-}
-
-.debug .m3 {
-    height: 100px;
-    background-color: rgba(158, 107, 107, 0.404);
-}
-
-.debug .m3-1 {
-    height: 50px;
-    background-color: rgba(50, 161, 165, 0.541);
-}
-
-.debug .m4 {
-    height: 100px;
-    background-color: rgba(0, 255, 255, 0.336);
-}
-
-.debug .m4-1 {
-    height: 50px;
-    background-color: rgba(165, 42, 42, 0.301);
-}
-
-.debug .m5 {
-    height: 100px;
-    background-color: rgba(0, 255, 64, 0.226);
-}
-
-.debug .m5-1 {
-    height: 50px;
-    background-color: rgba(137, 43, 226, 0.329);
-}
-
-.debug footer {
-    height: 400px;
-    background-color: rgba(128, 128, 128, 0.507);
-}
-
-.debug .f1 {
-    height: 250px;
-    background-color: rgba(0, 0, 255, 0.301);
-}
-
-.debug .f1-big {
-    border-style: dotted;
-}
-
-.debug .f1-small {
-    border-style: dashed;
-}
-
-.debug .f2 {
-    width: 500px;
-    height: 50px;
-    background-color: rgba(137, 43, 226, 0.315);
-}
-
 
 :root {
     --bool-heade-bg-color: #3161e0;
     --bool-link-color: white;
+    --boll-footer-bg-col: #23272a;
 }
 
 /* #region global */
@@ -105,6 +16,10 @@ a {
     color: var(--bool-link-color);
 }
 
+ul{
+    list-style: none;
+}
+
 /* #endregion */
 
 /* #region utility */
@@ -113,6 +28,8 @@ a {
     margin-left: 20%;
     margin-right: 20%;
     height: max-content;
+    max-width: 60%;
+    width: 2500px;
 }
 
 .df {
@@ -260,7 +177,7 @@ nav {
     padding: 5rem;
 }
 
-.download {
+.download-end {
     color: white;
     background-color: var(--bool-heade-bg-color);
     border-radius: 1rem;
@@ -269,36 +186,39 @@ nav {
 
 /* #endregion */
 
+/* #region footer */
 footer {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--boll-footer-bg-col);
 }
 
-.f1 {
-    display: flex;
+.footer-top {
     flex-flow: row;
     justify-content: center;
     align-items: start;
-    margin-top: 4px;
+    margin: 3rem 0 1rem;
 }
 
-.f1-big {
-    flex-grow: 2;
+.ita-png{
+    height: 1rem;
+    width: 2rem;
 }
 
-.f1-small {
-    flex-grow: 1;
-}
-
-.hr {
-    width: 100%;
-    border-bottom: 1px solid black;
-}
-
-.f2 {
-    display: flex;
+.footer-bottom{
     justify-content: space-between;
     align-items: center;
+    height: 4rem;
+    border-top: white 1px solid;
 }
+
+.register-button{
+    color: white;
+    background-color: var(--bool-heade-bg-color);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+/* #endregion */
